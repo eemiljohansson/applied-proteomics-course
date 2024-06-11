@@ -25,3 +25,19 @@ if (any(installed_libs == FALSE)) {
 invisible(lapply(libs, library, character.only = TRUE))
 ```
 
+
+## Load data
+
+For this course we will use the data from the unpublished paper "Plasma proteome profiling of patients with acute coronary syndrome" by Johansson E et al (2024).
+
+```{r}
+# Load data
+#TODO: Save your data in a variable called "data" and load it here
+
+# Example: data <- read_excel("your/path/to/data/here.xlsx")
+```
+
+
+
+
+
