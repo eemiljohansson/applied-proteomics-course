@@ -1,0 +1,27 @@
+
+
+# LAB 4 in Applied Proteomics
+
+## Description of the lab
+
+This is the main file for LAB 4 for the course of Applied Proteomics (CB2110).
+
+## Loading libraries
+
+```{r}
+# Libraries we need to execute the code in this lab
+libs <- c(
+  "tidyverse", "readxl", "corrplot", "pheatmap", "VIM",
+  "heatmaply", "plotly", "ggvenn", "ggrepel", "RColorBrewer"
+)
+
+# Install missing libraries
+installed_libs <- libs %in% rownames(installed.packages())
+if (any(installed_libs == FALSE)) {
+  install.packages(libs[!installed_libs])
+}
+
+# Load libraries
+invisible(lapply(libs, library, character.only = TRUE))
+```
+
